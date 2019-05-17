@@ -140,8 +140,24 @@ class SnakeList{
     }
 }
 class SnakeInfo{
-    constructor(data){
+    constructor(snake, element){
+        this.snake = snake
+        this.element = element;
+        this.populateInfo();
+    }
 
+   
+    populateInfo(){
+        const image = this.element[0]
+        const name =  this.element[1]
+        const danger = this.element[2]
+        const kill =  this.element[3]
+
+        image.src = this.snake.img
+        name.innerText = `Name: ${this.snake.name}`;
+        console.log(name.innerHTML)
+        danger.textContent = `Dangerous: ${this.snake.danger}`;
+        kill.innerHTML = `Method of Killing: ${this.snake.kill}`;
     }
 }
 const parentElement = document.querySelector(".main-content")
