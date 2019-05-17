@@ -1,0 +1,74 @@
+@import "reset.less";
+:root{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 4.6rem
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    max-width: 110rem;
+    width: 100%;
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: grey;
+        padding: 1rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+        a{
+            margin: 0 1.5rem;
+            font-size: 1.6rem;
+            color: aliceblue;
+            text-decoration: none;
+        }
+    }
+    .img-gh{
+        width: 36px;
+    }
+}
+.main-content{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid slategray;
+    height: 60rem;
+    display: flex;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        h2{
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+    }
+    .snake-list{
+        background-color: rgb(26, 24, 24);
+        width: 30%;
+
+    }
+    .snake-info{
+        background-color: rgb(34, 32, 32);
+        width: 70%;
+    }
+}
+.snake-list-component{
+    height: 100%;
+    background-color: rgb(21, 99, 60);
+    border-radius: 1rem;
+    margin: 2.5rem;
+}
+.snake-info-component{
+    height: 100%;
+    background-color: rgb(58, 53, 53);
+    margin: 2.5rem;
+}
