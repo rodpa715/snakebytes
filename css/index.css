@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 4.6rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content {
+  max-width: 110rem;
+  width: 100%;
+}
+.content header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  padding: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.content header a {
+  margin: 0 1.5rem;
+  font-size: 1.6rem;
+  color: aliceblue;
+  text-decoration: none;
+}
+.content .img-gh {
+  width: 36px;
+}
+.main-content {
+  background-color: #ffffff;
+  border: 2px solid slategray;
+  height: 60rem;
+  display: flex;
+}
+.main-content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.main-content div h2 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.main-content .snake-list {
+  background-color: #1a1818;
+  width: 30%;
+}
+.main-content .snake-info {
+  background-color: #222020;
+  width: 70%;
+}
+.snake-list-component {
+  height: 100%;
+  background-color: #15633c;
+  border-radius: 1rem;
+  margin: 2.5rem;
+}
+.snake-info-component {
+  height: 100%;
+  background-color: #3a3535;
+  margin: 2.5rem;
+}
