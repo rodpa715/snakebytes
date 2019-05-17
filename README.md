@@ -3,7 +3,7 @@ I liked snakes since I was a child but nothing had me prepared to what was going
 
 After one month attending Lambda School, I decided to dive into a personal project; **my love for Snakes**.
 
-I decided to make this project to test my skills, to start from scratch and utlize what I know and the idea is to keep upgrading this and eventually make it my portfolio. 
+I decided to make this project to test my skills, to start from scratch and utlize what I know and the idea is to keep upgrading this, and eventually make it my portfolio. 
 
 Snakebytes is an unfinished project with a lot room for improvment, eventually the website will be hosted on Netifly.
 
@@ -26,3 +26,17 @@ What it doesn't inlude yet:
     * No mobile breakpoints added
 * Less
     * No variables or mixins yet
+
+Things to be done for now;
+
+ - [ ] Refactor Javascript so that the first element displays
+ - [ ] Add Mobile Friendly Design
+ - [ ] Replace color scheme & Typography
+ - [ ] Polish CSS
+ - [ ] Add Meaningful content
+ - [ ] Add Snake Game
+ - [ ] Add Page about leggless lizards
+
+## Up-to-date Preview
+
+![Snakebytes Preview]("./assets/images/snakebytes.png)
