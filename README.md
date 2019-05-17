@@ -39,4 +39,4 @@ Things to be done for now;
 
 ## Up-to-date Preview
 
-![Snakebytes Preview]("./assets/images/snakebytes.png)
+![Snakebytes Preview](./assets/images/snakebytes.png)
