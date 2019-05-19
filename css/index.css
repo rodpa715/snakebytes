@@ -129,16 +129,22 @@ table {
 :root {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url("https://images.pexels.com/photos/1097016/pexels-photo-1097016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+html,
+body {
+  height: 100%;
 }
 body {
-  background-color: hsl(0, 0%, 100%);
+  color: bisque;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 h1 {
   font-size: 4.6rem;
   margin: 2.5rem 0;
-  color: #58340a;
   font-weight: bold;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 9px 5px rgba(0, 0, 0, 0.46);
 }
 .container {
   display: flex;
@@ -149,7 +155,7 @@ h1 {
 .content {
   max-width: 110rem;
   width: 100%;
-  box-shadow: 0rem 0rem 1.4rem -0.4rem #462803;
+  box-shadow: 0px 1px 9px 5px rgba(0, 0, 0, 0.46);
   border-radius: 0.5rem;
 }
 .content header {
@@ -157,85 +163,93 @@ h1 {
   border-radius: 0.5rem 0.5rem 0 0;
   justify-content: space-between;
   align-items: center;
-  background-color: grey;
-  padding: 1rem;
+  background-color: #15633c;
+  height: 5rem;
 }
 .content header a {
-  margin: 0 1.5rem;
+  margin: 0 1.2rem;
+  color: bisque;
   font-size: 1.6rem;
-  color: aliceblue;
   text-decoration: none;
+  padding: 1.5rem;
+  transition: 0.15s ease-in-out;
 }
-.content header .img-gh {
+.content header a:hover {
+  color: #9c8d08;
+  transition: 0.15s ease-in-out;
+}
+.content header .svg-gh {
+  padding: 0;
   width: 36px;
 }
-.main-content {
+.content .main-content {
   height: 60rem;
   display: flex;
+  background-color: #1a1818;
 }
-.main-content div {
+.content .main-content div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
 }
-.main-content div h2 {
-  color: white;
+.content .main-content div h2 {
   font-size: 3rem;
   text-align: center;
   margin-top: 2.5rem;
 }
-.main-content .snake-list {
-  background-color: #1a1818;
+.content .main-content .snake-list {
   width: 30%;
   border-radius: 0 0 0 0.5rem;
 }
-.main-content .snake-info {
-  background-color: #222020;
+.content .main-content .snake-info {
   width: 70%;
   border-radius: 0 0 0.5rem 0;
 }
-.main-content .snake-list-component {
+.content .main-content .snake-list-component {
   height: 100%;
   background-color: #15633c;
   border-radius: 1rem;
   margin: 2.5rem;
   justify-content: flex-start;
   align-items: center;
-  overflow-y: scroll;
+  overflow: auto;
 }
-.main-content .snake-list-component a {
+.content .main-content .snake-list-component a {
   font-size: 2.2rem;
   padding: 1.5rem 0;
   width: 100%;
   text-align: center;
+  color: #052913;
+  transition: 0.15s ease-in-out;
 }
-.main-content .snake-list-component a:hover {
+.content .main-content .snake-list-component a:hover {
   background-color: #2c4708;
   cursor: pointer;
-  color: white;
+  color: #9c8d08;
+  transition: 0.15s ease-in-out;
 }
-.main-content .snake-list-component::-webkit-scrollbar {
+.content .main-content .snake-list-component::-webkit-scrollbar {
   width: 1.5rem;
 }
-.main-content .snake-list-component::-webkit-scrollbar-track {
+.content .main-content .snake-list-component::-webkit-scrollbar-track {
   background: #052913;
   border-radius: 0 0.5rem 0.5rem 0;
 }
-.main-content .snake-list-component::-webkit-scrollbar-thumb {
+.content .main-content .snake-list-component::-webkit-scrollbar-thumb {
   background: #0b411f;
   border-radius: 0 0.5rem 0.5rem 0;
 }
-.main-content .snake-list-component::-webkit-scrollbar-thumb:hover {
+.content .main-content .snake-list-component::-webkit-scrollbar-thumb:hover {
   background: #9c8d08;
 }
-.main-content .snake-info-component {
+.content .main-content .snake-info-component {
   height: 100%;
-  background-color: #3a3535;
   margin: 2.5rem;
   flex-wrap: wrap;
+  color: #15633c;
 }
-.main-content .snake-info-component .image-wrapper {
+.content .main-content .snake-info-component .image-wrapper {
   width: 45%;
   height: 100%;
   display: flex;
@@ -243,11 +257,11 @@ h1 {
   align-items: center;
   padding: 0 1.5rem;
 }
-.main-content .snake-info-component .snake.img {
+.content .main-content .snake-info-component .snake.img {
   width: 100%;
   border-radius: 1.5rem;
 }
-.main-content .snake-info-component .text-wrapper {
+.content .main-content .snake-info-component .text-wrapper {
   width: 45%;
   display: flex;
   justify-content: center;
@@ -258,4 +272,5 @@ h1 {
 footer {
   margin: 2.5rem;
   font-size: 1.4rem;
+  color: #ffffff;
 }
